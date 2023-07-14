@@ -4,14 +4,8 @@ command_timeout = 10000
 
 # Replace the '❯' symbol in the prompt with '➜'
 [character]
-success_symbol = '[➜ ](bold green)'
-error_symbol = '[➜ ](bold red) '
-
-[battery]
-full_symbol = " "
-charging_symbol = " "
-discharging_symbol = "ﮊ "
-
+success_symbol = '[➜](bold green)'
+error_symbol = '[➜](bold red) '
 
 [cmd_duration]
 min_time = 100000
@@ -24,10 +18,10 @@ truncation_symbol = "…/"
 [status]
 style = "bg:red"
 symbol = " "
-not_found_symbol = ""
-not_executable_symbol = " "
+not_found_symbol = "󱚠 "
+not_executable_symbol = "󰋮 "
 signal_symbol = " "
-sigint_symbol = "ﰸ "
+sigint_symbol = "󰴔 "
 format = '[\[$symbol $common_meaning$signal_name$maybe_int\]]($style) '
 map_symbol = true
 disabled = false
@@ -98,15 +92,15 @@ format = '[\($state( $progress_current of $progress_total)\)]($style) '
 cherry_pick = "[ PICKING](bold red)"
 
 [git_status]
-conflicted = "ﬔ "
-ahead = "壟"
-behind = "鹿"
-diverged = ""
-untracked = " ‍"
-stashed = "   "
-modified = "  "
-staged = '[++\($count\)](green)'
-renamed = " 凜 "
+conflicted = "󰘕"
+ahead = ""
+behind = ""
+diverged = ""
+untracked = "󱌑 ‍"
+stashed = "  "
+modified = " 󱎝 "
+staged = '[󱡆 \($count\)](green)'
+renamed = "󱁜 "
 deleted = "  "
 
 [golang]
@@ -141,8 +135,4 @@ pyenv_version_name = true
 
 [rust]
 format = "via [ $version](red bold)"
-
-
-[singularity]
-format = '[ \[$env\]]($style) '
 
