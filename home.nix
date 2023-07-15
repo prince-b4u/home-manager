@@ -28,6 +28,7 @@
       jq
       mercurial
       neovim
+      nushell
       openssh
       openssl
       podman-compose
@@ -78,6 +79,7 @@
       # Build Tools
       clang-tools
       gfortran
+      git
       # Other
     ];
 
