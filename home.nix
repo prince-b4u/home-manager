@@ -4,9 +4,9 @@
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home = {
-    homeDirectory = "/home/princem";
+    homeDirectory = "/home/prince";
     stateVersion = "23.05";
-    username = "princem";
+    username = "prince";
 
     packages = with pkgs; [
 
