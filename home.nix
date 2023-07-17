@@ -45,7 +45,8 @@
 
       # Programming languages
       cbqn-replxx
-      io
+			io
+			ghc
       gforth
       go
       janet
