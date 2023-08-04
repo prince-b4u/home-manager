@@ -15,8 +15,10 @@
       awsebcli
       bat
       bash
+			butane
       cmake
-      coreutils-full
+      cfssl
+			coreutils-full
       darcs
       exa
       fd
@@ -37,8 +39,11 @@
       sshs
       starship
       tealdeer
+			terraform
+			traceroute
       tree-sitter
       unzip
+			wget
       zip
       yarn
       zoxide
@@ -55,8 +60,9 @@
       lua
       luarocks
       ## lua
-
-      ##
+			
+      mercury
+      ## Ocaml
       ocaml
       opam
       ##
@@ -81,6 +87,7 @@
       clang-tools
       gfortran
       git
+			libvirt
       # Other
     ];
 
