@@ -29,6 +29,7 @@
       htop
       jq
       mercurial
+			minikube
       neovim
       nushell
       openssh
@@ -43,6 +44,7 @@
 			traceroute
       tree-sitter
       unzip
+			vault
 			wget
       zip
       yarn
