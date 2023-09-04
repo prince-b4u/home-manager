@@ -11,7 +11,8 @@
     packages = with pkgs; [
 
       # CLI Tools
-      awscli2
+      argocd 
+			awscli2
       awsebcli
       bat
       bash
@@ -29,7 +30,6 @@
       htop
       jq
       mercurial
-			minikube
       neovim
       nushell
       openssh
