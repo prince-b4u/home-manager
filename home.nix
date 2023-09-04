@@ -11,7 +11,6 @@
     packages = with pkgs; [
 
       # CLI Tools
-      argocd 
 			awscli2
       awsebcli
       bat
@@ -34,6 +33,7 @@
       nushell
       openssh
       openssl
+			parallel
       podman-compose
       ripgrep
       rsync
