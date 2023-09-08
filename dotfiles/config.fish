@@ -20,7 +20,7 @@ source /home/princem/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
 
  #Alias    
     alias cat "bat"
-    alias ls  "exa --icons"
+    alias ls  "lsd --icon always"
     alias top "htop"
     alias vi  "nvim"
 		alias git-local-clean "git branch --merged | egrep -v \"(^\\*|master|main|dev)\" | xargs git branch -d"

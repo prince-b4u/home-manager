@@ -20,7 +20,6 @@
       cfssl
 			coreutils-full
       darcs
-      exa
       fd
       fish
       gnumake
@@ -28,6 +27,7 @@
       gzip
       htop
       jq
+			lsd
       mercurial
       neovim
       nushell
