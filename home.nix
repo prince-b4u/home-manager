@@ -30,7 +30,6 @@
 			lsd
       mercurial
       neovim
-      nushell
       openssh
       openssl
 			parallel
