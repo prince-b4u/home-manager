@@ -55,7 +55,11 @@
 			ghc
       gforth
       go
+			
+			##
       janet
+			jpm
+      ##
 
       ## lua
       lua
