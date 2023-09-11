@@ -16,4 +16,9 @@
 ## Podman 
 
 - Does not work in wsl alpine linux use the os package manager version
-- podman-compose works fine
+- podman-compose works fine though
+
+## Updates
+- To update packages first run `nix flake update` then `home-manager switch` to update to the lates packages
+- Clean up after packager run `sudo nix-collect-garbage -d` you can see prior generations using `nix-env --list-generations
+`
