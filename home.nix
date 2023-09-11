@@ -89,7 +89,6 @@
       clang-tools
       gfortran
       git
-			libvirt
       # Other
     ];
 
