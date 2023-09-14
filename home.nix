@@ -54,12 +54,17 @@
 			io
 			ghc
       gforth
-      go
+      
+			## golang
+			go
+			gopls
+			air
+      ## golang
 			
-			##
+			## janet
       janet
 			jpm
-      ##
+      ## janet
 
       ## lua
       lua
@@ -67,11 +72,13 @@
       ## lua
 			
       mercury
-      ## Ocaml
+      
+			## Ocaml
       ocaml
       opam
       ##
-      perl
+      
+			perl
 
       ## python
       python311
