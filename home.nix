@@ -1,4 +1,12 @@
-{ config, pkgs, ... }:
+{ config, pkgs,unstable, ... }:
+
+let 
+
+upkgs = with unstable; [
+      # Runtimes
+      bun
+		];
+in
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -8,7 +16,8 @@
     stateVersion = "23.05";
     username = "prince";
 
-    packages = with pkgs; [
+		
+		packages = with pkgs; [
 
       # CLI Tools
 			awscli2
@@ -90,7 +99,6 @@
       zulu ## Java
 
       # Runtimes
-      bun
       nodejs
       wasmer
 
@@ -100,7 +108,7 @@
       gfortran
       git
       # Other
-    ];
+    ] ++ upkgs;
 
 
     # # fonts?
