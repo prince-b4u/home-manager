@@ -100,7 +100,7 @@ in
 
       # Runtimes
       nodejs
-      wasmer
+      wasmtime
 
 
       # Build Tools
