@@ -3,8 +3,17 @@
 let 
 
 upkgs = with unstable; [
-      # Runtimes
+      tailwindcss
+			turso-cli
+			
+			# Runtimes
       bun
+			
+			##Languages
+			go_1_21
+			uiua
+			unison-ucm
+
 		];
 in
 
@@ -38,7 +47,8 @@ in
       jq
 			lsd
       mercurial
-      neovim
+      mariadb
+			neovim
       openssh
       openssl
 			parallel
@@ -64,12 +74,6 @@ in
 			ghc
       gforth
       
-			## golang
-			go
-			gopls
-			air
-      ## golang
-			
 			## janet
       janet
 			jpm
