@@ -5,7 +5,7 @@ let
 upkgs = with unstable; [
       tailwindcss
 			turso-cli
-			
+			helix
 			# Runtimes
       bun
 			
