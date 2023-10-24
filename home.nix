@@ -1,22 +1,24 @@
-{ config, pkgs,unstable, ... }:
+{ config, pkgs, unstable, ... }:
 
-let 
+let
 
-upkgs = with unstable; [
-      tailwindcss
-			turso-cli
-			helix
-			
-      # Runtimes
-      bun
-			
-			##Languages
-			swift
-      go_1_21
-			uiua
-			unison-ucm
+  upkgs = with unstable; [
+    tailwindcss
+    turso-cli
+    helix
 
-		];
+    #Runtimes
+    bun
+
+    ##Languages
+    swift
+    go_1_21
+    uiua
+    unison-ucm
+
+    ##LSP
+    nixpkgs-fmt
+  ];
 in
 
 {
@@ -26,16 +28,16 @@ in
     homeDirectory = "/home/prince";
     stateVersion = "23.05";
     username = "prince";
-		packages = with pkgs; [
+    packages = with pkgs; [
       # CLI Tools
-			awscli2
+      awscli2
       awsebcli
       bat
       bash
-			butane
+      butane
       cmake
       cfssl
-			coreutils-full
+      coreutils-full
       darcs
       fd
       fish
@@ -44,53 +46,53 @@ in
       gzip
       htop
       jq
-			lsd
+      lsd
       mercurial
       mariadb
-			neovim
+      neovim
       openssh
       openssl
-			parallel
+      parallel
       podman-compose
       ripgrep
       rsync
       sshs
       starship
       tealdeer
-			terraform
-			traceroute
+      terraform
+      traceroute
       tree-sitter
       unzip
-			vault
-			wget
+      vault
+      wget
       zip
       yarn
       zoxide
 
       # Programming languages
       cbqn-replxx
-			io
-			ghc
+      io
+      ghc
       gforth
       
-			## janet
+      ## janet
       janet
-			jpm
+      jpm
       ## janet
 
       ## lua
       lua
       luarocks
       ## lua
-			
+
       mercury
-      
-			## Ocaml
+
+      ## Ocaml
       ocaml
       opam
       ##
       
-			perl
+      perl
 
       ## python
       python311
@@ -119,7 +121,7 @@ in
     ".config/starship.toml".source = dotfiles/starship.toml;
   };
 
- home.sessionVariables = {
+  home.sessionVariables = {
     EDITOR = "hx";
   };
 
