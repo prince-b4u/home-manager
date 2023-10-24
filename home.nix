@@ -98,7 +98,8 @@ in
       python311
       python311Packages.pip
       ## python
-
+			
+			racket
       rakudo
       rustup
       zulu ## Java
