@@ -4,7 +4,6 @@ let
 
   upkgs = with unstable; [
     tailwindcss
-    turso-cli
     helix
 
     #Runtimes
@@ -18,6 +17,13 @@ let
 
     ##LSP
     nixpkgs-fmt
+    vscode-langservers-extracted
+    typescript
+    nodePackages.typescript-language-server
+    lua-language-server
+    marksman
+    yaml-language-server
+    taplo
   ];
 in
 
@@ -74,7 +80,7 @@ in
       io
       ghc
       gforth
-      
+
       ## janet
       janet
       jpm
@@ -91,15 +97,15 @@ in
       ocaml
       opam
       ##
-      
+
       perl
 
       ## python
       python311
       python311Packages.pip
       ## python
-			
-			racket
+
+      racket
       rakudo
       rustup
       zulu ## Java
