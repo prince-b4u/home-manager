@@ -1,0 +1,61 @@
+[[language]]
+name = "uiua"
+scope = "source.uiua"
+injection-regex = "uiua"
+file-types = ["ua"]
+roots = []
+auto-format = true
+comment-token = "#"
+language-server = { command = "uiua", args = ["lsp"], language-id = "uiua" }
+indent = { tab-width = 2, unit = "  " }
+shebangs = ["uiua"]
+
+[[grammar]]
+name = "uiua"
+source.git = "https://github.com/shnarazk/tree-sitter-uiua"
+source.rev = "17a4762f152ccd2f0807b09a13e89ddc294a900a"
+
+[[language]]
+name = "bqn"
+file-types = ["bqn"]
+injection-regex = "bqn"
+scope = "source.bqn"
+auto-format = true
+roots = []
+comment-token = "#"
+indent = { tab-width = 2, unit = "  " }
+shebangs = ["BQN", "CBQN", "bqn", "cbqn"]
+language-server = { command = "bqnlsp", language-id = "bqn" }
+
+[[grammar]]
+name = "bqn"
+source.git = "https://github.com/shnarazk/tree-sitter-bqn"
+source.rev = "a90b371503f158699042423918e4c5e9285f5519"
+
+[language.auto-pairs]
+'⟨' = '⟩'
+'(' = ')'
+'{' = '}'
+'[' = ']'
+
+[[language]]
+name = "nix"
+formatter = { command = "nixpkgs-fmt" }
+
+[[language]]
+name = "go"
+auto-format = true
+formatter = { command = "goimports" }
+
+[[language]]
+name = "unison"
+scope = "source.unison"
+file-types = ["u"]
+roots = []
+language-server = { command = "ncat", args= ["localhost", "5757"]}
+
+[[language]]
+name = "python"
+scope = "source.python"
+language-server = { command = "ruff-lsp" }
+config = { settings = { args = [] } }
