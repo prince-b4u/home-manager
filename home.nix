@@ -103,6 +103,7 @@ in
       ## python
       python311
       python311Packages.pip
+      python311Packages.ruff-lsp
       ## python
 
       racket
@@ -111,12 +112,13 @@ in
       zulu ## Java
 
       # Runtimes
-      nodejs
+      nodejs_20
       wasmtime
 
 
       # Build Tools
-      clang-tools
+      #clang-tools
+      libclang
       gfortran
       git
       # Other
