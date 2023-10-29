@@ -6,9 +6,14 @@ file-types = ["ua"]
 roots = []
 auto-format = true
 comment-token = "#"
-language-server = { command = "uiua", args = ["lsp"], language-id = "uiua" }
+language-servers = [ "uiua-lsp" ]
 indent = { tab-width = 2, unit = "  " }
 shebangs = ["uiua"]
+
+[language-server.uiua-lsp]
+command = "uiua"
+args = ["lsp"]
+
 
 [[grammar]]
 name = "uiua"
@@ -18,14 +23,19 @@ source.rev = "17a4762f152ccd2f0807b09a13e89ddc294a900a"
 [[language]]
 name = "bqn"
 file-types = ["bqn"]
-injection-regex = "bqn"
-scope = "source.bqn"
-auto-format = true
-roots = []
 comment-token = "#"
 indent = { tab-width = 2, unit = "  " }
-shebangs = ["BQN", "CBQN", "bqn", "cbqn"]
-language-server = { command = "bqnlsp", language-id = "bqn" }
+shebangs = ["bqn", "cbqn"]
+roots = []
+injection-regex = "bqn"
+scope = "scope.bqn"
+language-servers = ["bqnlsp"]
+language-id = "bqn"
+
+
+[language-server.bqnlsp]
+command = "bqnlsp"
+
 
 [[grammar]]
 name = "bqn"
@@ -52,10 +62,23 @@ name = "unison"
 scope = "source.unison"
 file-types = ["u"]
 roots = []
-language-server = { command = "ncat", args= ["localhost", "5757"]}
+language-servers = ["unison-lsp"]
+
+[language-server.unison-lsp]
+command = "ncat"
+args= ["localhost", "5757"]
 
 [[language]]
 name = "python"
-scope = "source.python"
-language-server = { command = "ruff-lsp" }
+roots = ["pyproject.toml"]
+language-servers = ["pyright", "ruff"]
 config = { settings = { args = [] } }
+
+[language-server.pyright]
+command = "pyright-langserver"
+args = ["--stdio"]
+
+[language-server.ruff]
+command = "ruff-lsp"
+config = { settings = { run = "onSave" } }
+ 
