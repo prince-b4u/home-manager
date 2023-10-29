@@ -10,7 +10,7 @@ let
     bun
 
     ##Languages
-    swift
+    #swift
     go_1_21
     uiua
     unison-ucm
