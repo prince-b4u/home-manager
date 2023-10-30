@@ -18,7 +18,7 @@ args = ["lsp"]
 [[grammar]]
 name = "uiua"
 source.git = "https://github.com/shnarazk/tree-sitter-uiua"
-source.rev = "17a4762f152ccd2f0807b09a13e89ddc294a900a"
+source.rev = "1c5fb1a07d5a8fac46bc54be58f274753019094f"
 
 [[language]]
 name = "bqn"
@@ -71,12 +71,10 @@ args= ["localhost", "5757"]
 [[language]]
 name = "python"
 roots = ["pyproject.toml"]
-language-servers = ["pyright", "ruff"]
+language-servers = ["pylsp", "ruff"]
 
-
-[language-server.pyright]
-command = "pyright-langserver"
-args = ["--stdio"]
+[language-server.pylsp]
+command = "pylsp"
 
 [language-server.ruff]
 command = "ruff-lsp"
