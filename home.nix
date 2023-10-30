@@ -104,6 +104,7 @@ in
       python311
       python311Packages.pip
       python311Packages.ruff-lsp
+      python311Packages.python-lsp-server
       ## python
 
       racket
