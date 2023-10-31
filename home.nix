@@ -5,16 +5,16 @@ let
   upkgs = with unstable; [
     tailwindcss
     helix
+    air
 
     #Runtimes
     bun
 
     ##Languages
-    #swift
     go_1_21
     uiua
     unison-ucm
-
+    
     ##LSP
     nixpkgs-fmt
     vscode-langservers-extracted
