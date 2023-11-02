@@ -18,6 +18,7 @@ starship init fish | source
 source /home/princem/.opam/opam-init/init.fish > /dev/null 2> /dev/null; or true
 
  #Alias    
+    alias grep "rg"
     alias cat "bat"
     alias ls  "lsd --icon always"
     alias top "htop"
