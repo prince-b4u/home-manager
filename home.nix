@@ -123,6 +123,7 @@ in
       libclang
       gfortran
       git
+      lldb
       # Other
     ] ++ upkgs;
   };
