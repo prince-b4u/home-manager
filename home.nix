@@ -15,6 +15,7 @@ let
     go_1_21
     uiua
     unison-ucm
+    factor-lang
     
     ##LSP
     nixpkgs-fmt
