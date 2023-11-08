@@ -6,8 +6,7 @@ let
     tailwindcss
     helix
     air
-    ollama
-
+    
     #Runtimes
     bun
 
