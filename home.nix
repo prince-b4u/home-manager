@@ -17,6 +17,7 @@ let
     factor-lang
     
     ##LSP
+    nil
     nixpkgs-fmt
     vscode-langservers-extracted
     typescript
