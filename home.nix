@@ -25,6 +25,7 @@ let
     marksman
     yaml-language-server
     taplo
+    zls
   ];
 in
 
@@ -72,8 +73,9 @@ in
       unzip
       vault
       wget
-      zip
+      wl-clipboard
       yarn
+      zip
       zoxide
 
       # Programming languages
