@@ -11,6 +11,7 @@ let
 
     ##Languages
     go_1_21
+    zig
     uiua
     unison-ucm
     factor-lang
