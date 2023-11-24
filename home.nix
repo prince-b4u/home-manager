@@ -55,6 +55,7 @@ in
       gzip
       htop
       jq
+      lazygit
       lsd
       mercurial
       mariadb
