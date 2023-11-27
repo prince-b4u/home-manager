@@ -90,7 +90,11 @@ in
       janet
       jpm
       ## janet
+      
       jelly
+      kotlin
+      kotlin-language-server
+
       ## lua
       lua
       luarocks
