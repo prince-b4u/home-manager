@@ -90,7 +90,7 @@ in
       janet
       jpm
       ## janet
-
+      jelly
       ## lua
       lua
       luarocks
