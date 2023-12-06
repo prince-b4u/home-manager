@@ -1,4 +1,4 @@
-{ config, pkgs, unstable, ... }:
+{ pkgs, unstable, ... }:
 
 let
 
@@ -35,7 +35,7 @@ in
   # manage.
   home = {
     homeDirectory = "/home/prince";
-    stateVersion = "23.05";
+    stateVersion = "23.11";
     username = "prince";
     packages = with pkgs; [
       # CLI Tools
