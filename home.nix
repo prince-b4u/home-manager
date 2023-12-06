@@ -69,7 +69,6 @@ in
       sshs
       starship
       tealdeer
-      terraform
       traceroute
       tree-sitter
       unzip
