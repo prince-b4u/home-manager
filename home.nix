@@ -140,6 +140,7 @@ in
     ".config/starship.toml".source = dotfiles/starship.toml;
     ".config/helix/languages.toml".source = dotfiles/helix/languages.toml;
     ".config/helix/config.toml".source = dotfiles/helix/config.toml;
+    ".config/wezterm/wezterm.lua".source = dotfiles/wezterm/wezterm.lua;
   };
 
   home.sessionVariables = {
