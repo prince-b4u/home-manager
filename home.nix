@@ -10,11 +10,10 @@ let
     bun
 
     ##Languages
-    go_1_21
-    zig
+    factor-lang    
     uiua
     unison-ucm
-    factor-lang
+    zig
     
     ##LSP
     nil
@@ -84,6 +83,7 @@ in
       io
       ghc
       gforth
+      go
 
       ## janet
       janet
