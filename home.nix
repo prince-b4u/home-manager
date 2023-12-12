@@ -10,6 +10,7 @@ let
     bun
 
     ##Languages
+    hare
     factor-lang    
     uiua
     unison-ucm
