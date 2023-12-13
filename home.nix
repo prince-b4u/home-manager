@@ -6,7 +6,8 @@ let
     tailwindcss
     helix
     air
-   #Runtimes
+    
+    #Runtimes
     bun
 
     ##Languages
@@ -27,6 +28,9 @@ let
     yaml-language-server
     taplo
     zls
+
+    ##Game engines
+    raylib
   ];
 in
 
