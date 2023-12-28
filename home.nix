@@ -125,7 +125,7 @@ in
       zulu ## Java
 
       # Runtimes
-      nodejs_20
+      nodejs_21
       wasmtime
 
 
