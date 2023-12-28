@@ -64,7 +64,6 @@ in
       mercurial
       mariadb
       neovim
-      openssh
       openssl
       parallel
       podman-compose
