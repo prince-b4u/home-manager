@@ -9,7 +9,7 @@ if wezterm.config_builder then
 end
 
 -- default shell
-config.default_prog = { 'fish' }
+config.default_prog = { '/var/home/prince/.nix-profile/bin/fish' }
 
 -- For example, changing the color scheme:
 config.color_scheme = 'Gruvbox dark, hard (base16)'
